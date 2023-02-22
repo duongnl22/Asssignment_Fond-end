@@ -1,0 +1,60 @@
+<div ng-controller="oppoCtrl">
+
+    <!-- IPhone -->
+    <div id="iphone">
+        <ul class="breadcrumb " style="padding-top: 5%;">
+            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">OPPO</a></li>
+
+        </ul>
+
+        <div class="product-iphone">
+            <h1> OPPO- Sơn Tùng MTP</h1>
+        </div>
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div>
+
+
+                    <h4>Sắp Xếp Theo</h4>
+                    <div class="d-flex">
+                        <div class="dropdown ">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                Giá cao - thấp
+                            </button>
+                        </div> &nbsp;
+                        <div class="dropup">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                Giá thấp - cao
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding-top: 30px;"
+                        ng-repeat="op in listOppo">
+                        <div class="product text-center">
+
+                            <a href="#oppo-chi-tiet/{{op.id}}">
+                                <img src="{{op.image}}" alt="" width="100%"><br>
+                                <h5 class="name-product" style="color: #000;">{{op.name}}</h5><br>
+                            </a>
+
+                            <p style="color: red;"><del style="color: rgb(83, 81, 81);">{{op.oldPrice | currency :"" : 0}} ₫</del></p>
+                            <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>{{op.newPrice | currency :"" : 0}} ₫</Strong></h1>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

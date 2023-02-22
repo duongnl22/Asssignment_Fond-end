@@ -1,0 +1,136 @@
+.toggle {
+    display: none;
+    background-color: #c9ced3;
+}
+
+.toggle a img {
+    text-align: left;
+}
+
+.toggle i {
+    float: right;
+    cursor: pointer;
+    padding: 20px;
+}
+
+@media screen and (max-width:990px) {
+
+    
+    .main-login {
+        flex-direction: column;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: #c9ced3;
+}
+
+header:hover {
+    transition: .9s;
+}
+
+article {
+    background-color: #ffffff;
+}
+
+.search {
+    padding: 10px;
+}
+
+.main-login {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.main-login a {
+    font-size: 15px;
+    color: #000000;
+
+
+}
+
+.main-login a:hover {
+    text-decoration: underline;
+}
+
+.icon-search {
+    cursor: pointer;
+}
+
+.product-iphone {
+    /* padding-top: 5%; */
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(165, 161, 161);
+}
+
+.product {
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.product a:hover {
+    text-decoration: none;
+}
+
+#cart {
+    margin-left: 30%;
+}
+
+.giam-gia {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    background-color: #888888;
+    border-radius: 3px;
+    color: #fff;
+}
+.banner-slide{
+    padding: 20px;
+}
+.image-slide{
+    border-radius: 30px;
+}
+@media screen and (max-width:760px) {
+    .image-hide{
+        display: none;
+    }
+}
+
+.slide-image{
+    cursor: pointer;
+    border: 1px solid #888888;
+}
+.GB{
+    border: 1px solid #888888;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+
+.color-iphone{
+    padding-top: 10px;
+}
+
+.add-cart{
+    border: 3px solid #dc3545;
+    height: 60px;
+    border-radius: 9px;
+    cursor: pointer; 
+    color: #dc3545;
+}

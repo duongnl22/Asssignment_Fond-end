@@ -1,0 +1,282 @@
+<style>
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 #ccc;
+        z-index: 1;
+
+    }
+
+    .nav li {
+        padding: 8px;
+    }
+
+    .nav li a {
+        padding: 10px 25px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #000;
+        position: relative;
+    }
+
+    @media screen and (max-width:990px) {
+        .nav li a {
+            padding: 10px 2px;
+        }
+    }
+
+    .nav li a:after {
+        content: "";
+        width: 0px;
+        height: 1px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000;
+        transition: all 0.3s linear;
+    }
+
+    .nav li a:hover:after,
+    .nav li.active a:after {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+        padding: 40px 20px;
+
+        margin: 0 0 50px;
+    }
+
+    .title-name {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .content {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    section:last-of-type {
+        margin: 0;
+    }
+</style>
+
+<script>
+    window.console = window.console || function (t) { };
+</script>
+
+
+
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+    }
+</script>
+
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <ul class="nav ">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+            <div class="row">
+                <li><a href="" data-link="iphone">iPhone</a></li>
+                <li><a href="" data-link="samsung">SamSung</a></li>
+                <li><a href="" data-link="oppo">OPPO</a></li>
+                <li><a href="" data-link="xiaomi">Xiaomi</a></li>
+            </div>
+        </div>
+    </ul>
+</div>
+<div class="wrapper container">
+    <section data-id="iphone">
+        <p class="title-name">IPHONE</p>
+        <p class="content">
+            iPhone là một dòng điện thoại thông minh được sản xuất bởi Apple Inc. sử dụng hệ điều hành di động iOS
+            của chính Apple . Thế hệ iPhone đầu tiên được Giám đốc điều hành Apple khi đó là Steve Jobs công bố vào
+            ngày 9 tháng 1 năm 2007. Kể từ đó, hàng năm Apple đều phát hành các mẫu iPhone mới và các bản cập nhật
+            iOS. Tính đến ngày 1 tháng 11 năm 2018, hơn 2,2 tỷ chiếc iPhone đã được bán ra. Tính đến năm 2022,
+            iPhone chiếm 15,6% thị phần điện thoại thông minh toàn cầu.
+        </p>
+        <img src="../image/image55.jpg" alt="" width="100%">
+        <p class="content">
+            iPhone là điện thoại di động đầu tiên có công nghệ cảm ứng đa điểm. [4] Kể từ khi iPhone ra mắt, nó đã
+            có kích thước màn hình lớn hơn, quay video , chống thấm nước và nhiều tính năng trợ năng. Cho đến iPhone
+            8 và 8 Plus, iPhone chỉ có một nút ở mặt trước với cảm biến vân tay Touch ID . Kể từ iPhone X , các mẫu
+            iPhone đã chuyển sang thiết kế màn hình phía trước gần như không viền với tính năng nhận dạng khuôn mặt
+            Face ID và chuyển đổi ứng dụng được kích hoạt bằng cử chỉ. Touch ID vẫn được sử dụng cho dòng iPhone SE
+            bình dân .
+
+            iPhone là một trong hai nền tảng điện thoại thông minh lớn nhất thế giới cùng với Android và là một phần
+            lớn của thị trường xa xỉ . iPhone đã tạo ra lợi nhuận lớn cho Apple, khiến nó trở thành một trong những
+            công ty giao dịch công khai có giá trị nhất thế giới . Thế hệ iPhone đầu tiên được mô tả là một "cuộc
+            cách mạng" đối với ngành công nghiệp điện thoại di động và các mẫu tiếp theo cũng nhận được nhiều lời
+            khen ngợi.iPhone đã được ghi nhận là đã phổ biến điện thoại thông minh và yếu tố hình thức slate ,
+            đồng thời tạo ra một thị trường rộng lớn cho các ứng dụng dành cho điện thoại thông minh, hay còn gọi là
+            " nền kinh tế ứng dụng ". Kể từ tháng 1 năm 2017 , App Store của Applechứa hơn 2,2 triệu ứng dụng cho
+            iPhone.
+        </p>
+        <img src="../image/image54.jpg" alt="" width="100%">
+
+    </section>
+    <section data-id="samsung">
+
+        <p class="title-name">SAMSUNG</p>
+        <p class="content">
+            Tập đoàn Samsung , hoặc đơn giản là Samsung ( Tiếng Hàn : 삼성 [samsʌŋ] ), là một tập đoàn sản xuất đa
+            quốc gia của Hàn Quốccó trụ sở tại Samsung Town , Seoul , Hàn Quốc. Nó bao gồm nhiều doanh nghiệp
+            trực thuộc, hầu hết trong số họ hợp nhất dưới thương hiệu Samsung và là chaebol (tập đoàn kinh
+            doanh) lớn nhất Hàn Quốc. Tính đến năm 2020,Samsung có giá trị thương hiệu toàn cầu cao thứ tám .
+
+            Samsung được thành lập bởi Lee Byung-chul vào năm 1938 với tư cách là một công ty thương mại . Trong ba
+            thập kỷ tiếp theo, tập đoàn đa dạng hóa sang các lĩnh vực bao gồm chế biến thực phẩm, dệt may, bảo hiểm,
+            chứng khoán và bán lẻ. Samsung gia nhập ngành công nghiệp điện tử vào cuối những năm 1960 và ngành xây
+            dựng và đóng tàu vào giữa những năm 1970; những khu vực này sẽ thúc đẩy sự tăng trưởng tiếp theo của nó.
+            Sau cái chết của Lee vào năm 1987, Samsung được tách thành năm tập đoàn kinh doanh - Tập đoàn Samsung,
+            Tập đoàn Shinsegae , Tập đoàn CJ và Tập đoàn Hansol và Tập đoàn JoongAng .
+        </p>
+        <video width="100%" loop autoplay muted>
+            <source src="../video/samsung.webm">
+        </video>
+        <p class="content">
+            Các chi nhánh công nghiệp đáng chú ý của Samsung bao gồm Samsung Electronics ( công ty công nghệ thông
+            tin , nhà sản xuất điện tử tiêu dùng và nhà sản xuất chip lớn nhất thế giới tính theo doanh thu năm
+            2017), Samsung Heavy Industries (công ty đóng tàu lớn thứ hai thế giới tính theo doanh thu năm
+            2010), và Samsung Engineering và Samsung C&T Corporation (lần lượt là công ty xây dựng lớn thứ 13 và
+            36 thế giới). Các công ty con đáng chú ý khác bao gồm Samsung Life Insurance (công ty bảo hiểm nhân
+            thọ lớn thứ 14 thế giới), Samsung Everland (nhà điều hành của Everland Resort , công viên giải trí
+            lâu đời nhấtở Hàn Quốc) và Cheil Worldwide (công ty quảng cáo lớn thứ 15 thế giới, tính theo doanh
+            thu năm 2012).
+        </p>
+    </section>
+    <section data-id="oppo">
+        <p class="title-name">OPPO</p>
+        <p class="content">
+            Tập đoàn Samsung , hoặc đơn giản là Samsung ( Tiếng Hàn : 삼성 [samsʌŋ] ), là một tập đoàn sản xuất đa
+            quốc gia của Hàn Quốccó trụ sở tại Samsung Town , Seoul , Hàn Quốc. Nó bao gồm nhiều doanh nghiệp
+            trực thuộc, hầu hết trong số họ hợp nhất dưới thương hiệu Samsung và là chaebol (tập đoàn kinh
+            doanh) lớn nhất Hàn Quốc. Tính đến năm 2020,Samsung có giá trị thương hiệu toàn cầu cao thứ tám .
+
+            Samsung được thành lập bởi Lee Byung-chul vào năm 1938 với tư cách là một công ty thương mại . Trong ba
+            thập kỷ tiếp theo, tập đoàn đa dạng hóa sang các lĩnh vực bao gồm chế biến thực phẩm, dệt may, bảo hiểm,
+            chứng khoán và bán lẻ. Samsung gia nhập ngành công nghiệp điện tử vào cuối những năm 1960 và ngành xây
+            dựng và đóng tàu vào giữa những năm 1970; những khu vực này sẽ thúc đẩy sự tăng trưởng tiếp theo của nó.
+            Sau cái chết của Lee vào năm 1987, Samsung được tách thành năm tập đoàn kinh doanh - Tập đoàn Samsung,
+            Tập đoàn Shinsegae , Tập đoàn CJ và Tập đoàn Hansol và Tập đoàn JoongAng .
+        </p>
+        <img src="../image/image56.webp" alt="" width="100%">
+        <p class="content">
+            Các chi nhánh công nghiệp đáng chú ý của Samsung bao gồm Samsung Electronics ( công ty công nghệ thông
+            tin , nhà sản xuất điện tử tiêu dùng và nhà sản xuất chip lớn nhất thế giới tính theo doanh thu năm
+            2017), Samsung Heavy Industries (công ty đóng tàu lớn thứ hai thế giới tính theo doanh thu năm
+            2010), và Samsung Engineering và Samsung C&T Corporation (lần lượt là công ty xây dựng lớn thứ 13 và
+            36 thế giới). Các công ty con đáng chú ý khác bao gồm Samsung Life Insurance (công ty bảo hiểm nhân
+            thọ lớn thứ 14 thế giới), Samsung Everland (nhà điều hành của Everland Resort , công viên giải trí
+            lâu đời nhấtở Hàn Quốc) và Cheil Worldwide (công ty quảng cáo lớn thứ 15 thế giới, tính theo doanh
+            thu năm 2012).
+        </p>
+
+    </section>
+    <section data-id="xiaomi">
+
+        <p class="title-name">XIAOMI</p>
+        <p class="content">
+            Tập đoàn Xiaomi , thường được gọi là Xiaomi và được đăng ký là
+            Xiaomi Inc. , là một nhà thiết kế và sản xuất điện tử tiêu dùng và phần mềm liên quan , thiết bị gia
+            dụng và đồ gia dụng của Trung Quốc . Đứng sau Samsung , đây là nhà sản xuất điện thoại thông minh lớn
+            thứ hai trên thế giới, hầu hết đều chạy hệ điều hành MIUI . Công ty được xếp hạng 338 và là công ty trẻ
+            nhất trong Fortune Global 500 .
+
+            Xiaomi được thành lập vào năm 2010 tại Bắc Kinh bởi tỷ phú hiện nay là Lei Jun khi ông 40 tuổi, cùng với
+            6 cộng sự cấp cao. Lei đã thành lập Kingsoft cũng như Joyo.com, được bán cho Amazon với giá 75 triệu đô
+            la vào năm 2004. Vào tháng 8 năm 2011, Xiaomi đã phát hành điện thoại thông minh đầu tiên của mình và
+            đến năm 2014, nó có thị phần điện thoại thông minh lớn nhất được bán ở Trung Quốc. Ban đầu công ty chỉ
+            bán sản phẩm trực tuyến; tuy nhiên, sau đó nó đã mở các cửa hàng truyền thống. Đến năm 2015, nó đã
+            phát triển một loạt các thiết bị điện tử tiêu dùng. Vào năm 2020, công ty đã bán được 146,3 triệu
+            điện thoại thông minh và hệ điều hành MIUI của họ có hơn 500 triệu người dùng hoạt động hàng tháng.
+            Trong quý 2 năm 2021, Xiaomi đã vượt qua Apple Inc. để trở thành nhà bán điện thoại thông minh lớn thứ
+            hai trên toàn thế giới, với 17% thị phần, theo Canalys. Đây cũng là nhà sản xuất thiết bị gia dụng
+            lớn bao gồm TV , đèn pin , máy bay không người lái và máy lọc không khí sử dụnghệ sinh thái sản phẩm
+            Internet of Things và Nhà thông minh Xiaomi .
+        </p>
+        <!-- <img src="../image/image57.jpg" alt="" width="100%"> -->
+        <video width="100%" loop autoplay muted>
+            <source src="../video/xiaomi.mp4">
+        </video>
+        <p class="content">
+            Xiaomi giữ giá của mình sát với chi phí sản xuất và chi phí nguyên vật liệu bằng cách giữ hầu hết các
+            sản phẩm của mình trên thị trường trong 18 tháng, lâu hơn hầu hết các công ty điện thoại thông minh, 
+             Công ty cũng sử dụng tối ưu hóa hàng tồn kho và bán hàng nhanh để giữ hàng tồn kho của nó thấp.
+            
+        </p>
+
+    </section>
+
+</div>
+
+
+<script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script id="rendered-js">
+    function scroll() {
+        var nav_height = $(".nav").outerHeight();
+        $(".wrapper").css({ "padding-top": nav_height + "px" });
+        $(".nav li a").click(function () {
+            $(".nav li").removeClass("active");
+            $(this).closest("li").addClass("active");
+            var targetId = $(this).attr("data-link");
+            $("section").each(function () {
+                var sectionId = $(this).attr("data-id");
+                if (targetId == sectionId) {
+                    $("body,html").animate(
+                        { scrollTop: $(this).offset().top - $(".nav").height() },
+                        500);
+
+                }
+            });
+        });
+
+
+    }
+    $(document).ready(function () {
+        scroll();
+    });
+
+    $(window).scroll(function () {
+
+        var cur_pos = $(this).scrollTop();
+        $("section").each(function () {
+            var activeSectionTop = $(this).offset().top - $(".nav").height();
+            if (cur_pos >= activeSectionTop - 1) {
+                $(".nav li").removeClass("active");
+                var activeId = $(this).attr("data-id");
+                $(".nav li a").each(function () {
+                    if ($(this).attr("data-link") == activeId) {
+                        $(this).closest("li").addClass("active");
+                    }
+                });
+            }
+        });
+    });
+//# sourceURL=pen.js
+</script>
+
+
+
+

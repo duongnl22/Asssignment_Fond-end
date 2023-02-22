@@ -1,0 +1,98 @@
+<div ng-controller="samsungCtrl">
+
+
+    <!-- IPhone -->
+    <div id="iphone">
+        <ul class="breadcrumb " style="padding-top: 5%;">
+            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">SamSung</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Italy</a></li>
+            <li class="breadcrumb-item active">Rome</li> -->
+        </ul>
+
+        <div class="product-iphone">
+            <h1> SamSung Rẻ Như Cho</h1>
+        </div>
+        <!--  -->
+        <div class="row banner-slide">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div id="demo" class="carousel slide " data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="../image/image27.webp" class="image-slide" width="100%" height="100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image27.webp" class="image-slide" width="100%" height="100">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- -------------------------- -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div id="demo" class="carousel slide image-hide" data-ride="carousel">
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="../image/image27.webp" class="image-slide" width="100%" height="100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image27.webp" class="image-slide" width="100%" height="100">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div>
+
+
+                    <h4>Sắp Xếp Theo</h4>
+                    <div class="d-flex">
+                        <div class="dropdown ">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                Giá cao - thấp
+                            </button>
+                        </div> &nbsp;
+                        <div class="dropup">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                Giá thấp - cao
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row">
+
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding-top: 30px;"
+                        ng-repeat="ss in listSamSung">
+                        <div class="product text-center">
+
+                            <a href="#samsung-chi-tiet/{{ss.id}}">
+                                <img src="{{ss.image}}" alt="" width="100%">
+                                <h5 class="name-product" style="color: #000;"> {{ss.name}}</h5>
+                            </a>
+
+                            <p style="color: red;"><del style="color: rgb(83, 81, 81);">{{ss.oldPrice | currency :"" : 0}} ₫</del></p>
+                            <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>{{ss.newPrice | currency :"" : 0}} ₫</Strong></h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

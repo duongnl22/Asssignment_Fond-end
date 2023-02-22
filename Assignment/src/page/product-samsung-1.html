@@ -1,0 +1,387 @@
+<div ng-controller="samsungCtrl">
+    <div ng-repeat="ss in listSamSung" ng-if="ss.id == idSamsung">
+
+        <ul class="breadcrumb " style="padding-top: 5%;">
+            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">SamSung</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ss.name}}</a></li>
+        </ul>
+
+        <div class="product-iphone">
+            <h1 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 "> {{ss.name}}</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 " style="padding-top: 10px;">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="{{ss.image}}" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image63.webp" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image64.webp" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image62.webp" alt="" width="80%">
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon bg-secondary"></span>
+                    </a>
+
+
+                </div>
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="row" style="margin-left: 5%;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="0" src="../image/image65.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="1" src="../image/image63.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="2" src="../image/image64.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="3" src="../image/image62.webp"
+                                alt="" width="100%">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="d-flex">
+                    <h2 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>{{ss.newPrice | currency :"" :0}} ₫</Strong></h2> &nbsp;
+                    <p style="color: red;  padding-top: 2%;"><del style="color: rgb(83, 81, 81); ">{{ss.oldPrice | currency :"" :0}} ₫</del>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>256GB</Strong>
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>128GB</Strong>
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>64GB</Strong>
+
+                        </div>
+
+                    </div>
+                </div><br>
+                <strong>Chọn màu</strong>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image63.webp" width="30%" alt="" height="50">
+                            <p><strong>Đỏ</strong><br>13,290.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image64.webp" width="30%" alt="" height="50">
+                            <p><strong>Trắng</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image62.webp" width="30%" alt="" height="50">
+                            <p><strong>Đen</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" style="padding: 10px 0px;">
+                        <button type="button" class="btn btn-danger" style="width: 100%; height: 60px;"><strong>MUA
+                                NGAY</strong> </button>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 10px 10px 0;">
+                        <div class="add-cart text-center">
+                            <i class="fas fa-cart-plus "></i><br>
+                            <strong>Thêm Vào Giỏ </strong>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Thông Số Kỹ Thuật</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kích thước màn hình</td>
+                            <td>6.1 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình</td>
+                            <td>IPS LCD</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau</td>
+                            <td>Camera kép 12MP: <br>
+                                - Camera góc rộng: ƒ/1.8 aperture <br>
+                                - Camera siêu rộng: ƒ/2.4 aperture
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước</td>
+                            <td>12 MP, ƒ/2.2 aperture</td>
+                        </tr>
+                        <tr>
+                            <td>Chipset</td>
+                            <td>A13 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình</td>
+                            <td>IPS LCD</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng RAM</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong</td>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Pin</td>
+                            <td>3110 mAh</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ SIM</td>
+                            <td>Nano-SIM + eSIM</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành</td>
+                            <td>iOS 13 hoặc cao hơn </td>
+                        </tr>
+                        <tr>
+                            <td>Độ phân giải màn hình</td>
+                            <td>1792 x 828 pixel</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="product-iphone">
+            <h1 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 "> Sản Phẩm Tương Tự</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                <!-- The slideshow -->
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <div class="row">
+                            <!-- 1 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image28.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> Samsung Galaxy Z Fold4</h5> <br>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">40.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>34.290.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image29.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> Samsung Galaxy S22 (8GB - 128GB)
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">21.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>14.350.000 ₫</Strong>
+                                    </h1>
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image30.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;">Samsung Galaxy S22 Ultra (8GB -
+                                            128GB)
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">30.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>21.090.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image31.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000; font-size: 19px;"> Samsung Galaxy
+                                            A73
+                                            (5G) 256GB
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">12.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>10.090.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- 5 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image32.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;">Samsung Galaxy Z Flip4 128GB</h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">23.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>17.790.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image35.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> Samsung Galaxy A04s</h5> <br>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">3.390.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>3.990.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image33.webp" alt="" width="100%">
+                                        <h5 class="name-product" style="color: #000;"> Samsung Galaxy S22 Ultra (12GB -
+                                            256GB)</h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">33.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>23.990.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image34.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> Samsung Galaxy A53 (5G)</h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">9.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>7.790.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo1" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

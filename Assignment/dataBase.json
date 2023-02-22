@@ -1,0 +1,315 @@
+{
+    "product-iphone": [
+        {
+            "id": 1,
+            "name": "iPhone 11 64GB I Chính hãng VN/A",
+            "oldPrice": 14990000,
+            "newPrice": 10990000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image18.webp"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 14 128GB | Chính hãng VN/A",
+            "oldPrice": 24990000,
+            "newPrice": 20790000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image19.webp"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 13 128GB | Chính hãng VN/A",
+            "oldPrice": 24990000,
+            "newPrice": 18290000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image20.webp"
+        },
+        {
+            "id": 4,
+            "name": "iPhone 14 Pro Max 256GB | Chính hãng VN/A",
+            "oldPrice": 32290000,
+            "newPrice": 37990000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image21.webp"
+        },
+        {
+            "id": 5,
+            "name": "iPhone 11 128GB I Chính hãng VN/A",
+            "oldPrice": 16990000,
+            "newPrice": 12590000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image22.webp"
+        },
+        {
+            "id": 6,
+            "name": "iPhone 14 Pro 128GB | Chính hãng VN/A",
+            "oldPrice": 30990000,
+            "newPrice": 27790000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image23.webp"
+        },
+        {
+            "id": 7,
+            "name": "iPhone 12 64GB I Chính hãng VN/A",
+            "oldPrice": 19990000,
+            "newPrice": 15390000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image24.webp"
+        },
+        {
+            "id": 8,
+            "name": "iPhone 14 256GB | Chính hãng VN/A",
+            "oldPrice": 27990000,
+            "newPrice": 22990000,
+            "type": "iphone",
+            "quantity": 13,
+            "image": "../image/image25.webp"
+        }
+    ],
+    "product-samsung": [
+        {
+            "id": 1,
+            "name": "Samsung Galaxy Z Fold4",
+            "oldPrice": 40990000,
+            "newPrice": 34290000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image28.webp"
+        },
+        {
+            "id": 2,
+            "name": "Samsung Galaxy S22 (8GB - 128GB)",
+            "oldPrice": 21990000,
+            "newPrice": 14350000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image29.webp"
+        },
+        {
+            "id": 3,
+            "name": "Samsung Galaxy S22 Ultra (8GB - 128GB)",
+            "oldPrice": 30990000,
+            "newPrice": 21090000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image30.webp"
+        },
+        {
+            "id": 4,
+            "name": "Samsung Galaxy A73 (5G) 256GB",
+            "oldPrice": 12990000,
+            "newPrice": 10090000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image31.webp"
+        },
+        {
+            "id": 5,
+            "name": "Samsung Galaxy Z Flip4 128GB",
+            "oldPrice": 2390000,
+            "newPrice": 17790000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image32.webp"
+        },
+        {
+            "id": 6,
+            "name": "Samsung Galaxy S22 Ultra (12GB - 256GB)",
+            "oldPrice": 33990000,
+            "newPrice": 23990000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image33.webp"
+        },
+        {
+            "id": 7,
+            "name": "Samsung Galaxy A53 (5G)",
+            "oldPrice": 9990000,
+            "newPrice": 7990000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image34.webp"
+        },
+        {
+            "id": 8,
+            "name": "Samsung Galaxy A04s",
+            "oldPrice": 4390000,
+            "newPrice": 3990000,
+            "type": "samsung",
+            "quantity": 13,
+            "image": "../image/image35.webp"
+        }
+    ],
+    "product-oppo": [
+        {
+            "id": 1,
+            "name": "OPPO Reno8",
+            "oldPrice": 8990000,
+            "newPrice": 7850000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image36.webp"
+        },
+        {
+            "id": 2,
+            "name": "OPPO Reno7 4G (8GB - 128GB)",
+            "oldPrice": 7990000,
+            "newPrice": 6990000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image37.webp"
+        },
+        {
+            "id": 3,
+            "name": "OPPO Reno8 5G 8GB 256GB",
+            "oldPrice": 13990000,
+            "newPrice": 12990000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image38.webp"
+        },
+        {
+            "id": 4,
+            "name": "OPPO Reno8 Z",
+            "oldPrice": 10490000,
+            "newPrice": 9190000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image39.webp"
+        },
+        {
+            "id": 5,
+            "name": "OPPO Reno6 Z 5G",
+            "oldPrice": 9490000,
+            "newPrice": 6790000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image40.webp"
+        },
+        {
+            "id": 6,
+            "name": "OPPO Reno7 Z (5G)",
+            "oldPrice": 33990000,
+            "newPrice": 23990000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image42.webp"
+        },
+        {
+            "id": 7,
+            "name": "OPPO Reno8 Pro 5G 12GB 256GB",
+            "oldPrice": 17090000,
+            "newPrice": 18990000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image43.webp"
+        },
+        {
+            "id": 8,
+            "name": "OPPO Reno 7 Pro",
+            "oldPrice": 18990000,
+            "newPrice": 13990000,
+            "type": "oppo",
+            "quantity": 13,
+            "image": "../image/image44.webp"
+        }
+    ],
+    "product-xiaomi": [
+        {
+            "id": 1,
+            "name": "Xiaomi Redmi Note 11 128GB",
+            "oldPrice": 4990000,
+            "newPrice": 4400000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image46.webp"
+        },
+        {
+            "id": 2,
+            "name": "Xiaomi 12 Pro (5G)",
+            "oldPrice": 27990000,
+            "newPrice": 16990000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image47.webp"
+        },
+        {
+            "id": 3,
+            "name": "Xiaomi 12T",
+            "oldPrice": 12490000,
+            "newPrice": 11390000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image48.webp"
+        },
+        {
+            "id": 4,
+            "name": "POCO X4 GT",
+            "oldPrice": 8490000,
+            "newPrice": 7650000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image49.webp"
+        },
+        {
+            "id": 5,
+            "name": "Xiaomi Redmi Note 11 Pro Plus 5G",
+            "oldPrice": 9990000,
+            "newPrice": 8890000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image50.webp"
+        },
+        {
+            "id": 6,
+            "name": "Xiaomi Redmi Note 11S",
+            "oldPrice": 6690000,
+            "newPrice": 5690000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image51.webp"
+        },
+        {
+            "id": 7,
+            "name": "Xiaomi Redmi 10 (4GB - 64GB)",
+            "oldPrice": 3990000,
+            "newPrice": 3190000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image52.webp"
+        },
+        {
+            "id": 8,
+            "name": "Xiaomi 11T Pro",
+            "oldPrice": 14990000,
+            "newPrice": 11890000,
+            "type": "xiaomi",
+            "quantity": 13,
+            "image": "../image/image53.webp"
+        }
+    ],
+
+    "cart" : [
+        {
+            "id" : "1",
+            "name_product" : "iPhone 11 64GB I Chính hãng VN/A",
+            "quantity": 1,
+            "price": 10000000,
+            "image": "../image/image54.webp"
+        }
+    ],
+    "login": [
+        {
+            "id": 1,
+            "userName": "a",
+            "password": "a"
+        }
+    ]
+}

@@ -1,0 +1,411 @@
+<div ng-controller="iphoneCtrl">
+    <div ng-repeat="ip in listIphone" ng-if="ip.id == idIphone"  >
+
+
+        <ul class="breadcrumb " style="padding-top: 5%;">
+            <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="#" >iPhone</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ip.name}}</a></li>
+        </ul>
+
+        <div class="product-iphone">
+            <h1 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " > {{ip.name}}</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 " style="padding-top: 10px;">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="{{ip.image}}"   alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image58.webp" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image59.webp" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image60.webp" alt="" width="80%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../image/image61.webp" alt="" width="80%">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon bg-secondary"></span>
+                    </a>
+
+
+                </div>
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="row" style="margin-left: 5%;">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="0" src="../image/image18.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="1" src="../image/image58.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="2" src="../image/image59.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="3" src="../image/image60.webp"
+                                alt="" width="100%">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+                            <img class="slide-image" data-target="#demo" data-slide-to="4" src="../image/image61.webp"
+                                alt="" width="100%">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <div class="d-flex">
+                    <h2 style="color: rgb(255, 0, 0) ; font-size:25px ;" ><Strong>{{ip.newPrice | currency :"" :0}} ₫</Strong></h2> &nbsp;
+                    <p style="color: red;  padding-top: 2%;"><del style="color: rgb(83, 81, 81); ">{{ip.oldPrice | currency :"" :0}} ₫</del>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>256GB</Strong>
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>128GB</Strong>
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div class="text-center GB">
+                            <Strong>64GB</Strong>
+
+                        </div>
+
+                    </div>
+                </div><br>
+                <strong>Chọn màu</strong>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image18.webp" width="30%" alt="" height="50">
+                            <p><strong>Trắng</strong><br>13,290.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image58.webp" width="30%" alt="" height="50">
+                            <p><strong>Đen</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image59.webp" width="30%" alt="" height="50">
+                            <p><strong>Tím</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image60.webp" width="30%" alt="" height="50">
+                            <p><strong>Xanh</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5 color-iphone">
+                        <div class=" GB d-flex">
+                            <img src="../image/image61.webp" width="30%" alt="" height="50">
+                            <p><strong>Đỏ</strong><br>10.990.000đ</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" style="padding: 10px 0px;">
+                        <button type="button" class="btn btn-danger" style="width: 100%; height: 60px;"><strong>MUA
+                                NGAY</strong> </button>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 10px 10px 0;">
+                        <div class="add-cart text-center" ng-click="addToCart()">
+                            <i class="fas fa-cart-plus "></i><br>
+                            <strong>Thêm Vào Giỏ </strong>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Thông Số Kỹ Thuật</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kích thước màn hình</td>
+                            <td>6.1 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình</td>
+                            <td>IPS LCD</td>
+                        </tr>
+                        <tr>
+                            <td>Camera sau</td>
+                            <td>Camera kép 12MP: <br>
+                                - Camera góc rộng: ƒ/1.8 aperture <br>
+                                - Camera siêu rộng: ƒ/2.4 aperture
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Camera trước</td>
+                            <td>12 MP, ƒ/2.2 aperture</td>
+                        </tr>
+                        <tr>
+                            <td>Chipset</td>
+                            <td>A13 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td>Công nghệ màn hình</td>
+                            <td>IPS LCD</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng RAM</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhớ trong</td>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Pin</td>
+                            <td>3110 mAh</td>
+                        </tr>
+                        <tr>
+                            <td>Thẻ SIM</td>
+                            <td>Nano-SIM + eSIM</td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành</td>
+                            <td>iOS 13 hoặc cao hơn </td>
+                        </tr>
+                        <tr>
+                            <td>Độ phân giải màn hình</td>
+                            <td>1792 x 828 pixel</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="product-iphone">
+            <h1 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 "> Sản Phẩm Tương Tự</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                <!-- The slideshow -->
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <div class="row">
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="product-iphone-1.html">
+                                        <img src="../image/image18.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 11 64GB I Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">14.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>10.990.000 ₫</Strong>
+                                    </h1>
+
+                                </div>
+                            </div>
+
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image19.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 14 128GB | Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">24.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>20.790.000 ₫</Strong>
+                                    </h1>
+
+
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image20.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 13 128GB | Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">24.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>18.290.000 ₫</Strong>
+                                    </h1>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image21.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000; font-size: 19px;"> iPhone 14 Pro
+                                            Max
+                                            |
+                                            Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">32.290.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>37.990.000 ₫</Strong>
+                                    </h1>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- 5 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image22.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 11 128GB I Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">16.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>12.590.000 ₫</Strong>
+                                    </h1>
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image23.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 14 Pro 128GB | Chính hãng
+                                            VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">30.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>27.790.000 ₫</Strong>
+                                    </h1>
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image24.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 12 64GB I Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">19.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>15.390.000 ₫</Strong>
+                                    </h1>
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 " style="padding: 20px 20px;">
+                                <div class="product text-center">
+
+                                    <a href="">
+                                        <img src="../image/image25.webp" alt="" width="100%"><br>
+                                        <h5 class="name-product" style="color: #000;"> iPhone 14 256GB | Chính hãng VN/A
+                                        </h5>
+                                    </a>
+
+                                    <p style="color: red;"><del style="color: rgb(83, 81, 81);">27.990.000 ₫</del></p>
+                                    <h1 style="color: rgb(255, 0, 0) ; font-size:25px ;"><Strong>22.990.000 ₫</Strong>
+                                    </h1>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo1" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
